@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f0f0f;
+  color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  color: #ff007f;
+}
+
+.sidebar h2 {
+  margin-bottom: 2rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 1rem;
+}
+
+.sidebar a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.dashboard {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.stat-card {
+  background-color: #1f1f1f;
+  padding: 1rem;
+  border-left: 4px solid #ff007f;
+  border-radius: 6px;
+}
+
+.coin-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.coin-card {
+  background-color: #1f1f1f;
+  padding: 1rem;
+  border: 1px solid #ff007f;
+  border-radius: 6px;
+}
+
+.show-more {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #ff007f;
+  text-decoration: underline;
+}
